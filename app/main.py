@@ -8,6 +8,10 @@ app = FastAPI(title="SHL Conversational Assessment Recommender")
 catalog = load_catalog("data/catalog.json")
 retriever = Retriever(catalog)
 
+@app.get("/")
+def root():
+    return {"status":"ok","service":"SHL Conversational Assessment Recommender"}
+
 @app.get("/health")
 def health():
     return {"status":"ok"}
