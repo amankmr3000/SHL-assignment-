@@ -151,9 +151,10 @@ def role_pack(ctx: str) -> List[str]:
             "Spring (New)",
             "Amazon Web Services (AWS) Development (New)",
             "Docker (New)",
-            "Automata (New)",
             "SQL (New)",
         ]
+        if not any(x in s for x in ["remove coding", "no coding", "drop coding", "without coding"]):
+            wanted += ["Automata (New)"]
 
     if "full stack" in s or "full-stack" in s or "frontend" in s or "front end" in s:
         wanted += ["Automata Front End", "Angular 6 (New)", "JavaScript (New)", "HTML/CSS (New)"]
