@@ -1,6 +1,6 @@
 # SHL Conversational Assessment Recommender
 
-FastAPI service for SHL AI Intern assignment.
+FastAPI service for SHL AI Intern assignment. Link -  https://shl-ai-xjeh.onrender.com/docs
 
 ## Run locally
 
